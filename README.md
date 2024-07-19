@@ -10,3 +10,7 @@ This project is my first attempt at developing an Android application using Kotl
 - Stores movie data locally using Room
 - Implements a simple image slider for movie posters (not completed)
 - Handles network errors and exceptions gracefully
+
+## Screenshots
+<img src="https://github.com/user-attachments/assets/9be0f0cc-ac41-4738-b5b8-2a4151387c60" alt="Home Screen" width="200">
+<img src="https://github.com/user-attachments/assets/9eea3592-1c09-400f-aaf1-3a7d237cf665" alt="Register Screen" width="200">
