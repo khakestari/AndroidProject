@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="#31312D">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/moviePoster"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:contentDescription="Movie Poster"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/backgrounds/scenic"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/movieTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/moviePoster"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Sin City"
+            />
+
+        <TextView
+            android:id="@+id/movieRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_star"
+            android:drawablePadding="4dp"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="@id/movieTitle"
+            app:layout_constraintTop_toBottomOf="@id/movieTitle"
+            tools:text="8.1" />
+
+        <TextView
+            android:id="@+id/movieCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_globe"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="@id/movieRating"
+            app:layout_constraintTop_toBottomOf="@id/movieRating"
+            tools:text="USA" />
+
+        <TextView
+            android:id="@+id/movieYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_calender"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="@id/movieCountry"
+            app:layout_constraintTop_toBottomOf="@id/movieCountry"
+            tools:text="2005" />
+
+        <TextView
+            android:id="@+id/getMoreInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Get more info >"
+            android:textColor="#FF0000"
+            app:layout_constraintStart_toStartOf="@id/movieYear"
+            app:layout_constraintTop_toBottomOf="@id/movieYear" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
